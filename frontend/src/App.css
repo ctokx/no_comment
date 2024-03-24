@@ -1,0 +1,146 @@
+.App {
+  height: 100vh;
+
+  width: 100vw;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.App .content {
+  z-index: 2;
+
+  position: relative;
+
+  background-color: rgba(184, 23, 125, 0.367);
+
+  padding: 77px;
+
+  border-radius: 8px;
+
+  box-shadow: 0 4px 6px rgb(194, 17, 17);
+
+  max-width: 600px;
+
+  width: 100%;
+
+  box-sizing: border-box;
+}
+
+.App canvas {
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  z-index: 1;
+}
+
+.upload-form {
+  padding: 20px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  max-width: 400px;
+
+  margin: 2rem auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.upload-form select option {
+  background-color: #333;
+
+  color: #fff;
+}
+
+.upload-form input[type="file"],
+.upload-form select {
+  border: 1px solid #ddd;
+
+  border-radius: 5px;
+
+  padding: 10px;
+
+  width: calc(100% - 22px);
+
+  color: white;
+}
+
+.upload-form select {
+  -webkit-appearance: none;
+
+  -moz-appearance: none;
+
+  appearance: none;
+
+  background-repeat: no-repeat;
+
+  background-position-x: 95%;
+
+  background-position-y: center;
+
+  background: none;
+
+  color: white;
+}
+
+.upload-form button {
+  padding: 10px 20px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background-color: rgb(194, 17, 17);
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+.upload-form button:hover {
+  background-color: rgba(194, 17, 17, 0.517);
+}
+
+.upload-form input[type="file"] {
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Workbench", sans-serif;
+
+  font-size: 62px;
+}
+
+.upload-form input[type="file"],
+.upload-form select,
+.upload-form button {
+  border: 1px solid #ddd;
+
+  border-radius: 5px;
+
+  padding: 10px;
+
+  width: calc(100% - 22px);
+
+  color: white;
+}
